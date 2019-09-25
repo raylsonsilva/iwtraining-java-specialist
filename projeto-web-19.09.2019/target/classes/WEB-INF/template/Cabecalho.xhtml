@@ -1,0 +1,61 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+	
+	<h:head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Consultas JPQL</title>
+		<style type="text/css">
+		    .ui-panelgrid .ui-grid-responsive .ui-panelgrid-cell  {
+		        text-align: center;
+			}
+			.value {
+		        font-weight: bold;
+		    }
+		    .center {
+		    	text-align: center;
+		    }
+		    
+		</style>
+	</h:head>
+	<h:body>
+		<h:form>  
+			<p:tabMenu activeIndex="#{param.i}">
+			    <p:menuitem value="Set Parameter" outcome="/consultas/listar1">
+			    	<f:param name="i" value="0" />
+			    </p:menuitem>
+			    <p:menuitem value="All" outcome="/consultas/listar2">
+			    	<f:param name="i" value="1" />
+			    </p:menuitem>
+			    <p:menuitem value="Named Query" outcome="/consultas/listar3">
+			    	<f:param name="i" value="2" />
+			    </p:menuitem>
+			    <p:menuitem value="Typed Queries" outcome="/consultas/listar4">
+			    	<f:param name="i" value="3" />
+			    </p:menuitem>
+			    <p:menuitem value="Aggregate Function" outcome="/consultas/listar5">
+			    	<f:param name="i" value="4" />
+			    </p:menuitem>
+			    <p:menuitem value="Store Procedures" outcome="/consultas/listar6">
+			    	<f:param name="i" value="5" />
+			    </p:menuitem>
+			    <p:menuitem value="Operators 01" outcome="/consultas/listar7">
+			    	<f:param name="i" value="6" />
+			    </p:menuitem>
+			    <p:menuitem value="Operators 02" outcome="/consultas/listar8">
+			    	<f:param name="i" value="7" />
+			    </p:menuitem>
+			    <p:menuitem value="Operators 03" outcome="/consultas/listar9">
+			    	<f:param name="i" value="8" />
+			    </p:menuitem>
+			    <p:menuitem value="Operators 04" outcome="/consultas/listar10">
+			    	<f:param name="i" value="9" />
+			    </p:menuitem>
+			</p:tabMenu>
+		</h:form>
+		
+	</h:body>
+	
+</ui:composition>
